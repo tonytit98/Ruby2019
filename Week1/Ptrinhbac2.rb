@@ -19,11 +19,11 @@ if a != 0 then
   else
     if delta == 0 then
       x = -b/a2
-      puts "PT nghiệm kép x1 = x2 = : #{x}"
+      puts "Phuong trinh nghiem kep x1 = x2 = : #{x}"
     else
-      puts "Vô nghiệm"
+      puts "Vo nghiem"
     end
   end
 else
-  puts "Ko phải ptb2"
+  puts "Khong phai phuong trinh bac 2"
 end

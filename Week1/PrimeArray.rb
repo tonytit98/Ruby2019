@@ -1,5 +1,5 @@
 require 'cmath'
-puts "Nhap n:"
+puts "Put n:"
 n = gets()
 n = n.to_i
 def is_prime?(num)
