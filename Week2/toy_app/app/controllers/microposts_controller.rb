@@ -14,8 +14,8 @@ class MicropostsController < ApplicationController
 
   # GET /microposts/new
   def new
+    @users = User.all
     @micropost = Micropost.new
-    @user = User.all
   end
 
   # GET /microposts/1/edit
@@ -25,6 +25,7 @@ class MicropostsController < ApplicationController
   # POST /microposts
   # POST /microposts.json
   def create
+    
     @micropost = Micropost.new(micropost_params)
 
     respond_to do |format|

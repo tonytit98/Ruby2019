@@ -10,9 +10,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    # find the user record
-    @user = User.find(params[:id])
-    @microposts = Micropost.all
   end
 
   # GET /users/new
