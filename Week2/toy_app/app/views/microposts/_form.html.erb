@@ -4,9 +4,9 @@
       <h2><%= pluralize(micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
 
       <ul>
-      <% micropost.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% micropost.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
@@ -18,9 +18,8 @@
 
   <div class="field">
     <%= form.label :user_id %>
-    <%= form.collection_select :user_id,@users,:id, :name %>
+    <%= form.collection_select :user_id,@user,:id, :name %>
   </div>
-
 
   <div class="actions">
     <%= form.submit %>

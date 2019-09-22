@@ -1,3 +1,5 @@
 class Micropost < ApplicationRecord
     belongs_to :user
-end
+    validates :content, length: { maximum: 140 },
+                        presence: true
+  end
